@@ -6,7 +6,7 @@
 #    By: lpaiva <lpaiva@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/07 21:53:12 by lpaiva            #+#    #+#              #
-#    Updated: 2025/11/10 18:47:27 by lpaiva           ###   ########.fr        #
+#    Updated: 2025/11/10 19:04:25 by lpaiva           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,15 +20,17 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
-
-##test: $(NAME)
-##	$(CC) printf_tests.c -L. -lftprintf -o printf_tests
-##	./printf_tests
-
+	
 clean:
 	rm -f $(OBJ)
-
+	
 fclean: clean
 	rm -f $(NAME) printf_tests
 
 re: fclean all
+
+.PHONY: all clean fclean re start end party
+
+##	./printf_tests
+##test: $(NAME)
+##	$(CC) printf_tests.c -L. -lftprintf -o printf_tests
