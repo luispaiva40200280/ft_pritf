@@ -6,7 +6,7 @@
 /*   By: lpaiva <lpaiva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 21:26:27 by lpaiva            #+#    #+#             */
-/*   Updated: 2025/11/10 18:40:44 by lpaiva           ###   ########.fr       */
+/*   Updated: 2025/11/11 19:18:07 by lpaiva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,11 @@ int	ft_printf(const char *format, ...)
 	int			count;
 
 	va_start(args, format);
+	if (!format)
+	{
+		count = -1;
+		return (count);
+	}	
 	i = 0;
 	count = 0;
 	while (format[i])

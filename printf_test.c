@@ -6,13 +6,12 @@
 /*   By: lpaiva <lpaiva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 18:37:04 by lpaiva            #+#    #+#             */
-/*   Updated: 2025/11/10 18:39:22 by lpaiva           ###   ########.fr       */
+/*   Updated: 2025/11/11 19:24:26 by lpaiva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-/*
 #include <stdio.h>
+#include "ft_printf.h"
 
 int	main(void)
 {
@@ -25,7 +24,7 @@ int	main(void)
 	void			*ptr;
 
 	c = 'A';
-	str = "Hello, 42!";
+	str = "Hello, World!";
 	num = -12345;
 	u = 4294967295;
 	ptr = str;
@@ -68,6 +67,9 @@ int	main(void)
 	ret2 = printf("Real printf:  Char=%c, Str=%s, Num=%d, Hex=%x, Ptr=%p\n",
 			c, str, num, num, ptr);
 	printf("Return values -> mine: %d | real: %d\n\n", ret1, ret2);
+	printf("==== Error force test ===== \n");
+	ret1 = ft_printf("Hello %s! Number: %d\n", "porto", 42);
+	printf("ft_printf returned: %d\n\n", ret1);
+	
 	return (0);
 }
- */
