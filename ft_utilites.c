@@ -6,7 +6,7 @@
 /*   By: lpaiva <lpaiva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 21:33:41 by lpaiva            #+#    #+#             */
-/*   Updated: 2025/11/10 18:40:45 by lpaiva           ###   ########.fr       */
+/*   Updated: 2025/11/12 22:31:05 by lpaiva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	ft_putstr(char *str, int count)
 	return (count);
 }
 
-int	ft_putnbr_base(long long nbr, char *base, int base_len, int count)
+int	ft_putnbr_base(long nbr, char *base, int base_len, int count)
 {
 	char	buffer[65];
 	int		i;
